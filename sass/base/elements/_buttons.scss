@@ -1,0 +1,19 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	border-radius: 0;
+	background: #ddd;
+	color: #444;
+	line-height: 1;
+	padding: 1rem;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active {
+		border-color: $color__border-button-focus;
+	}
+}

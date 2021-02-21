@@ -1,0 +1,57 @@
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+.wp-block,
+.wp-block .wp-block-freeform {
+    font-family: $font__main;
+    font-size: 1rem;
+	line-height: 2;
+	text-rendering: optimizeLegibility;
+}
+
+.edit-post-layout .interface-interface-skeleton__content {
+	background-color: inherit;
+}
+
+body {
+    background-color: $color__background;
+    color: $color__text-main;
+}
+
+.wp-block {
+	max-width: 696px;
+	margin-left: auto;
+	margin-right: auto;
+
+	a {
+		color: $color__primary;
+		text-decoration: none;
+	}
+}
+
+.editor-post-title {
+	
+	.editor-post-title__input {
+		font-size: 1.875rem;
+		padding: 0;
+		font-weight: 600;
+		letter-spacing: -1px;
+		line-height: 1.25;
+
+		@media screen and (min-width: $breakpoint-med) {
+			font-size: 2.375rem;
+		}
+	}
+}
+
+.block-editor-writing-flow__click-redirect {
+	display: none;
+}
+
+.wp-block-embed.aligncenter.is-type-rich {
+	> .wp-block-embed__wrapper iframe,
+	> .wp-block-embed__wrapper twitter-widget {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}

@@ -1,0 +1,148 @@
+body {
+    overflow-x: hidden;
+    
+    #page {
+        display: block;
+        transform: translateX(0);
+        transition: transform 0.5s;
+    }
+
+    &.offcanvas-menu-active {
+        overflow: visible;
+
+        #page {
+            transform: translateX(100vw);
+            transition: transform 0.5s;
+        }
+
+        &:after {
+            content: "";
+            position: fixed;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+
+            animation: fade .5s;
+        }
+
+        @media screen and (min-width: 768px) {
+            overflow: none;
+
+            #page {
+                transform: translateX(0);
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &.offcanvas-search-active {
+        overflow: hidden;
+
+        #page {
+            transform: translateX(-100vw);
+            transition: transform 0.5s;
+        }
+
+        &:after {
+            content: "";
+            position: fixed;
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+
+            animation: fade .5s;
+        }
+
+        @media screen and (min-width: 768px) {
+            overflow: visible;
+
+            #page {
+                transform: translateX(0);
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+#instantclick-bar {
+    background: $color__primary;
+}
+
+.container {
+    max-width: calc(100% - 3rem);
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: calc((740px + 3rem) - 3rem);;
+    }
+
+    @media screen and (min-width: 1020px) {
+        max-width: calc((920px + 3rem) - 3rem);
+    }
+
+    @media screen and (min-width: 1140px) {
+        max-width: calc((1068px + 3rem) - 3rem);
+    }
+}
+
+/* Grid
+--------------------------------------------- */
+@import "grid/grid";
+
+/* Header
+--------------------------------------------- */
+@import "header/site-header";
+
+/* Modals
+--------------------------------------------- */
+@import "modal/menu-modal";
+@import "modal/search-modal";
+
+/* Navigation
+--------------------------------------------- */
+@import "navigation/main-navigation";
+@import "navigation/social-navigation";
+@import "navigation/posts-navigation";
+@import "navigation/footer-navigation";
+
+/* Billboard
+--------------------------------------------- */
+@import "billboard/billboard";
+
+/* Posts and pages
+--------------------------------------------- */
+@import "content/posts-and-pages";
+
+/* Comments
+--------------------------------------------- */
+@import "comments/comments";
+
+/* Widgets
+--------------------------------------------- */
+@import "widgets/widgets";
+
+/* Media
+--------------------------------------------- */
+@import "media/media";
+
+/* Captions
+--------------------------------------------- */
+@import "media/captions";
+
+/* Galleries
+--------------------------------------------- */
+@import "media/galleries";
+
+/* Footer
+--------------------------------------------- */
+@import "footer/site-footer";

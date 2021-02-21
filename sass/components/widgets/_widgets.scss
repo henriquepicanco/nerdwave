@@ -1,0 +1,104 @@
+.widget-area {
+	display: block;
+
+	@media screen and (min-width: 768px) {
+		padding-left: 2em;
+	}
+}
+
+.widget {
+	font-size: 0.875rem;
+	margin-bottom: 2rem;
+
+	// Make sure select elements fit in widgets.
+	select {
+		max-width: 100%;
+	}
+
+	ul,
+	li {
+		padding: 0;
+		margin: 0 0 1.25rem;
+		list-style: none;
+	}
+
+	.tagcloud {
+		a {
+			font-size: 0.875rem !important;
+			color: #333;
+			background: $color__border-abbr;
+			padding: 0.5rem;
+			margin: 0.3125rem 0.3125rem 0.3125rem 0;
+			display: inline-block;
+			border-radius: 2.5px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.widget-title {
+	color: #fff;
+	background-color: $color__primary;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	padding: 0.25rem 0.75rem;
+	margin: 0 0 1.625rem;
+	display: inline-block;
+}
+
+.search-form {
+	&-icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: auto;
+		height: 100%;
+		color: #a5a29d;
+	}
+	.search-form {
+		position: relative;
+
+		.search-field {
+			box-sizing: border-box;
+			width: 100%;
+			height: 3.2em;
+			padding: 0 1em;
+			border: 1px solid #a5a29d;
+			border-radius: 0;
+			-webkit-appearance: none;
+		}
+		
+		.search-submit {
+			display: none;
+		}
+
+		::-webkit-input-placeholder {
+			font-size: 14px;
+			font-family: "Archivo Narrow", sans-serif;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.wp-most-popular {
+	.row {
+		margin-bottom: 1rem;
+	}
+	
+	.col-8 {
+		padding-left: 1rem;
+	}
+
+	.entry-title {
+		font-size: 1rem;
+
+		@media screen and (min-width: 768px) {
+			font-size: 0.875rem;
+		}
+
+		@media screen and (min-width: 960px) {
+			font-size: 1rem;
+		}
+	}
+}

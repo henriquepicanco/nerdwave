@@ -1,0 +1,82 @@
+.search-modal {
+    top: 0;
+    position: fixed;
+    right: -100vw;
+    background: transparent;
+    width: 100vw;
+    height: 100vh;
+    background: $color__background;
+    border-right: 1px solid $color__border-abbr;
+    z-index: 999;
+    transition: all 0.5s;
+    overflow-x: auto;
+
+    @media screen and (min-width: 768px) {
+        display: none !important;
+    }
+    
+    .admin-bar & {
+        top: 0;
+
+        @media screen and (min-width: $breakpoint-small) {
+            top: 46px;
+            height: calc(100vh - 46px);
+        }
+
+        @media screen and (min-width: 782px) {
+            top: 32px;
+            height: calc(100vh - 32px);
+        }
+    }
+
+    &.offcanvas-search-active {
+        right: 0;
+        transition: all 0.5s;
+    }
+
+    .container {
+        &:nth-child(1) {
+            .col-11 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                height: 3.75rem;
+            }
+
+            .col-1 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                height: 3.75rem;
+            }
+        }
+
+        &:nth-child(2) {
+            padding: 1rem 0;
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .search-form {
+        .search-field {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .search-form-icon,
+        .search-submit {
+            display: none;
+        }
+    }
+}
