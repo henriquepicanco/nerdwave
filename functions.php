@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '2.0' );
+	define( 'NERDWAVE_VERSION', '1.0.1' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -301,6 +301,11 @@ function nerdwave_get_related_posts( $post_id, $related_count, $args = array() )
 }
 
 /**
+ * Classes
+ */
+require get_template_directory() . '/inc/classes/class-svg-icons.php';
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -318,5 +323,4 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * SVG support
  */
-require get_template_directory() . '/inc/classes/class-svg-icons.php';
 require get_template_directory() . '/inc/svg-icons.php';

@@ -16,7 +16,7 @@
 			<div class="site-info">
 				<p><?php get_template_part( 'template-parts/header/site-branding' ); ?></p>
 				<p><?php get_template_part( 'template-parts/navigation/footer-navigation' ); ?></p>
-				<p><?php echo nerdwave_copyright(); ?> <?php printf( esc_html__( '%1$s - Conteúdo sob Creative Commons %2$s', 'nerdwave' ), 'Nerdwave', '<a href="https://nerdwave.com.br/direitos-do-conteudo">(Saiba mais)</a>' ); ?>
+				<p><?php echo nerdwave_copyright(); ?> <?php printf( esc_html__( '%1$s - Content under Creative Commons %2$s', 'nerdwave' ), get_bloginfo( 'name' ), '<a href="'. get_bloginfo( 'url' ) . '/creative-commons">('. esc_html__( 'Know more', 'nerdwave' ) . ')</a>' ); ?>
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- #colophon -->

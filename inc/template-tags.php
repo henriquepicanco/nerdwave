@@ -28,13 +28,13 @@ if ( ! function_exists( 'nerdwave_posted_on' ) ) :
 		if( is_singular() ) {
 			$posted_on = sprintf(
 				/* translators: %s: post date. */
-				esc_html_x( '%s', 'post date', 'nerdwave' ),
+				__( '%s', 'nerdwave' ),
 				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 			);
 		} else {
 			$posted_on = sprintf(
 				/* translators: %s: post date. */
-				esc_html_x( '%s', 'post date', 'nerdwave' ),
+				__( '%s', 'nerdwave' ),
 				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 			);
 		}
@@ -51,12 +51,11 @@ if ( ! function_exists( 'nerdwave_posted_by' ) ) :
 	function nerdwave_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'By %s', 'post author', 'nerdwave' ),
-			'<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a>'
+			__( 'By %s', 'nerdwave' ),
+			'<a href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a>'
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-
 	}
 endif;
 
@@ -107,7 +106,7 @@ if ( ! function_exists( 'nerdwave_edit_link' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Editar <span class="screen-reader-text">%s</span>', 'nerdwave' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'nerdwave' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -129,10 +128,10 @@ if ( ! function_exists( 'nerdwave_cat_links' ) ) :
 	function nerdwave_cat_links() {
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ' ', 'nerdwave' ) );
+			$categories_list = get_the_category_list();
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<div class="cat-links">' . esc_html__( '%1$s', 'nerdwave' ) . '</div>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<div class="cat-links">%1$s</div>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 	}
@@ -145,10 +144,10 @@ if ( ! function_exists( 'nerdwave_tags_links' ) ) :
 	function nerdwave_tags_links() {
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'nerdwave' ) );
+			$tags_list = get_the_tag_list();
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( '%1$s', 'nerdwave' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="tags-links">%1$s</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 	}
@@ -166,9 +165,9 @@ if ( ! function_exists( 'nerdwave_reading_time' ) ) :
 		$readingtime = ceil($word_count / 200);
 
 		if ($readingtime == 1) {
-			$timer = esc_html( ' minute reading', 'nerdwave' );
+			$timer = esc_html__( ' minute reading', 'nerdwave' );
 		} else {
-			$timer = esc_html( ' minutes of reading', 'nerdwave' );
+			$timer = esc_html__( ' minutes of reading', 'nerdwave' );
 		}
 		
 		$totalreadingtime = $readingtime . $timer;
@@ -246,3 +245,48 @@ function nerdwave_nav_menu_social_icons( $item_output, $item, $depth, $args ) {
 }
 
 add_filter( 'walker_nav_menu_start_el', 'nerdwave_nav_menu_social_icons', 10, 4 );
+
+/**
+ * Comments
+ */
+
+/**
+ * Checks if the specified comment is written by the author of the post commented on.
+ *
+ * @param object $comment Comment data.
+ * @return bool
+ */
+function nerdwave_is_comment_by_post_author( $comment = null ) {
+
+	if ( is_object( $comment ) && $comment->user_id > 0 ) {
+
+		$user = get_userdata( $comment->user_id );
+		$post = get_post( $comment->comment_post_ID );
+
+		if ( ! empty( $user ) && ! empty( $post ) ) {
+
+			return $comment->user_id === $post->post_author;
+
+		}
+	}
+	return false;
+
+}
+
+/**
+ * Filters comment reply link to not JS scroll.
+ *
+ * Filter the comment reply link to add a class indicating it should not use JS slow-scroll, as it
+ * makes it scroll to the wrong position on the page.
+ *
+ * @param string $link Link to the top of the page.
+ * @return string Link to the top of the page.
+ */
+function nerdwave_filter_comment_reply_link( $link ) {
+
+	$link = str_replace( 'class=\'', 'class=\'do-not-scroll ', $link );
+	return $link;
+
+}
+
+add_filter( 'comment_reply_link', 'nerdwave_filter_comment_reply_link' );

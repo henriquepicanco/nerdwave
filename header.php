@@ -32,7 +32,7 @@
 					<div class="col-4">
 						<button class="menu-toggle mobile-menu-toggle show-sm" aria-controls="menu-modal" aria-expanded="false">
 							<?php echo nerdwave_get_theme_svg( 'bars' ); ?>
-							<span class="screen-reader-text"><?php esc_html_e( 'Abrir menu', 'nerdwave' ); ?></span>
+							<span class="screen-reader-text"><?php esc_html_e( 'Open menu', 'nerdwave' ); ?></span>
 						</button>
 
 						<?php get_template_part( 'template-parts/navigation/social-navigation' ); ?>
@@ -45,13 +45,13 @@
 					<div class="col-4">
 						<button class="search-toggle mobile-search-toggle show-sm" aria-controls="search-modal" aria-expanded="false">
 							<?php echo nerdwave_get_theme_svg( 'search' ); ?>
-							<span class="screen-reader-text"><?php esc_html_e( 'Abrir pesquisa', 'nerdwave' ); ?></span>
+							<span class="screen-reader-text"><?php esc_html_e( 'Open search', 'nerdwave' ); ?></span>
 						</button>
 
 						<div class="header-search-wrap hidden-sm">
 							<button class="search-toggle desktop-search-toggle" aria-controls="search-modal" aria-expanded="false">
 								<?php echo nerdwave_get_theme_svg( 'search' ); ?>
-								<span class="screen-reader-text"><?php esc_html_e( 'Abrir pesquisa', 'nerdwave' ); ?></span>
+								<span class="screen-reader-text"><?php esc_html_e( 'Open search', 'nerdwave' ); ?></span>
 							</button>
 
 							<div class="header-search-inner">

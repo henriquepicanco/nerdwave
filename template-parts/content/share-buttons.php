@@ -14,13 +14,13 @@ $facebook_url = '
     <ul class="entry-share__inner">
         <li class="share-buttons share-twitter">
             <a class="share-icon share-icon--twitter" href="http://twitter.com/share?text=<?php echo esc_attr( $title ); ?>&nbsp;—&url=<?php the_permalink(); ?>&via=NerdwaveBR" target="_blank">
-                <span class="screen-reader-text"><?php echo esc_html__( 'Compartilhe no Twitter', 'tabor' ); ?></span>
+                <span class="screen-reader-text"><?php echo esc_html__( 'Share on Twitter', 'tabor' ); ?></span>
                 <?php echo nerdwave_get_theme_svg( 'twitter' ); ?>
             </a>
         </li>
         <li class="share-buttons share-facebook">
             <a class="share-icon share-icon--facebook" href="<?php echo esc_url( $facebook_url ); ?>" target="_blank">
-                <span class="screen-reader-text"><?php echo esc_html__( 'Compartilhe no Facebook', 'tabor' ); ?></span>
+                <span class="screen-reader-text"><?php echo esc_html__( 'Share on Facebook', 'tabor' ); ?></span>
                 <?php echo nerdwave_get_theme_svg( 'facebook' ); ?>
             </a>
         </li>

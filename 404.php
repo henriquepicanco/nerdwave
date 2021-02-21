@@ -19,13 +19,13 @@ get_header();
 						<div class="post-outer">
 							<div class="post-inner">
 								<header class="entry-header">
-									<h1 class="entry-title"><?php esc_html_e( 'Opa! Esta página não foi encontrada!', 'nerdwave' ); ?></h1>
+									<h1 class="entry-title"><?php esc_html_e( 'Ops! This page was not found!', 'nerdwave' ); ?></h1>
 								</header>
 								<div class="entry-content">
-									<p><?php esc_html_e( 'A página pela qual você busca, não foi encontrada neste endereço. Talvez o conteúdo tenha mudado de lugar, ou mesmo nunca tenha existido. Use a busca, no topo desta página. Ela pode te ajudar a encontrar o que procura.', 'nerdwave' ); ?></p>
+									<p><?php esc_html_e( 'The page you are looking for was not found at this address. Perhaps the content has moved, or even never existed. Use the search at the top of this page. It can help you find what you are looking for.', 'nerdwave' ); ?></p>
 								</div>
 								<footer class="entry-footer">
-									<span><a href="/"><?php esc_html_e( 'Voltar a página inicial', 'nerdwave' ); ?></a><span>
+									<span><a href="/"><?php esc_html_e( 'Back to Homepage', 'nerdwave' ); ?></a><span>
 								</footer>
 							</div>
 						</div>

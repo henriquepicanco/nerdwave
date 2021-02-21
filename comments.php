@@ -18,6 +18,8 @@
 if ( post_password_required() ) {
 	return;
 }
+
+$nerdwave_comment_count = get_comments_number();
 ?>
 
 <div id="comments" class="comments-area">
@@ -28,21 +30,15 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$nerdwave_comment_count = get_comments_number();
-			if ( '1' === $nerdwave_comment_count ) {
-				printf(
-					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'nerdwave' ),
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
-				);
+			if ( $nerdwave_comment_count == 1 ) {
+				$comment_text = esc_html__( ' comment', 'nerdwave' );
 			} else {
-				printf( 
-					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $nerdwave_comment_count, 'comments title', 'nerdwave' ) ),
-					number_format_i18n( $nerdwave_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
-				);
+				$comment_text = esc_html__( ' comments', 'nerdwave' );
 			}
+
+			$comments_title = $nerdwave_comment_count . $comment_text;
+
+			echo $comments_title;
 			?>
 		</h2><!-- .comments-title -->
 

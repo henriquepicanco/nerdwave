@@ -1,0 +1,193 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nerdwave 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"POT-Creation-Date: 2021-02-21 20:02-0300\n"
+"PO-Revision-Date: 2021-02-21 20:02-0300\n"
+"Last-Translator: \n"
+"Language-Team: Henrique Picanço <contato@nerdwave.com.br>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: nerdwave\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_html__;esc_html_x;esc_html\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive.php:76 category.php:139 index.php:80 search.php:78 tag.php:100
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: archive.php:77 category.php:140 index.php:81 search.php:79 tag.php:101
+msgid "Next page"
+msgstr "Próxima página"
+
+#: archive.php:78 category.php:141 index.php:82 search.php:80 tag.php:102
+msgid "Page"
+msgstr "Página"
+
+#: archive.php:82 category.php:145 index.php:86 search.php:84 tag.php:106
+msgid "Load more"
+msgstr "Carregar mais"
+
+#: comments.php:34
+msgid " comment"
+msgstr " comentário"
+
+#: comments.php:36
+msgid " comments"
+msgstr " comentários"
+
+#: footer.php:19
+#, php-format
+msgid "%1$s - Content under Creative Commons %2$s"
+msgstr "%1$s - Conteúdo sob Creative Commons %2$s"
+
+#: footer.php:19
+msgid "Know more"
+msgstr "Saiba mais"
+
+#: functions.php:64
+msgid "Primary"
+msgstr "Principal"
+
+#: functions.php:65
+msgid "Social"
+msgstr "Social"
+
+#: functions.php:66
+msgid "Footer"
+msgstr "Rodapé"
+
+#: functions.php:139
+msgid "Sidebar"
+msgstr "Barra Lateral"
+
+#: functions.php:141
+msgid "Add widgets here."
+msgstr "Adicione widgets aqui."
+
+#: inc/template-tags.php:31 inc/template-tags.php:37
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: inc/template-tags.php:54
+#, php-format
+msgid "By %s"
+msgstr "Por %s"
+
+#: inc/template-tags.php:85
+#, php-format
+msgid "No comments<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Nenhum comentário<span class=\"screen-reader-text\"> em %s</span>"
+
+#: inc/template-tags.php:109
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/template-tags.php:168
+msgid " minute reading"
+msgstr " minuto de leitura"
+
+#: inc/template-tags.php:170
+msgid " minutes of reading"
+msgstr " minutos de leitura"
+
+#: template-parts/content/share-buttons.php:17
+msgid "Share on Twitter"
+msgstr "Compartilhar no Twitter"
+
+#: template-parts/content/share-buttons.php:23
+msgid "Share on Facebook"
+msgstr "Compartilhar no Facebook"
+
+#: template-parts/header/site-branding.php:2
+msgid "Homepage"
+msgstr "Página Inicial"
+
+#: template-parts/post/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece por aqui</"
+"a>."
+
+#: template-parts/post/content-single.php:29
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Continue lendo<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/post/content-single.php:42
+msgid "Pages:"
+msgstr "Páginas:"
+
+#~ msgid "Ops! This page was not found!"
+#~ msgstr "Opa! Esta página não foi encontrada!"
+
+#~ msgid ""
+#~ "The page you are looking for was not found at this address. Perhaps the "
+#~ "content has moved, or even never existed. Use the search at the top of "
+#~ "this page. It can help you find what you are looking for."
+#~ msgstr ""
+#~ "A página pela qual você busca, não foi encontrada neste endereço. Talvez "
+#~ "o conteúdo tenha mudado de lugar, ou mesmo nunca tenha existido. Use a "
+#~ "busca, no topo desta página. Ela pode te ajudar a encontrar o que procura."
+
+#~ msgid "Back to Homepage"
+#~ msgstr "Voltar para a Página Inicial"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Comentários fechados."
+
+#~ msgid "Skip to content"
+#~ msgstr "Pular para o conteúdo"
+
+#~ msgid "Open menu"
+#~ msgstr "Abrir menu"
+
+#~ msgid "Open search"
+#~ msgstr "Abrir busca"
+
+#~ msgid "Related Posts"
+#~ msgstr "Posts Relacionados"
+
+#~ msgid "Close menu"
+#~ msgstr "Fechar menu"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Nada Encontrado"
+
+#~ msgid ""
+#~ "Sorry, but nothing matched your search terms. Please try again with some "
+#~ "different keywords."
+#~ msgstr ""
+#~ "Desculpa, mas a busca não encontrou algo com estes termos. Por favor, "
+#~ "tente novamente com termos de busca diferentes."
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching can help."
+#~ msgstr ""
+#~ "Parece que n&oacute;s n&atilde;o conseguimos encontrar o que voc&ecirc; "
+#~ "est&aacute; procurando. Talvez a busca possa te ajudar."
+
+#~ msgid "One comment"
+#~ msgstr "Um comentário"
+
+#~ msgid "Leave a comment"
+#~ msgstr "Deixe um comentário"
+
+#~ msgid "Newer Comments"
+#~ msgstr "Comentários recentes"
+
+#, php-format
+#~ msgid "One thought on &ldquo;%1$s&rdquo;"
+#~ msgstr "Um comentário sobre &ldquo;%1$s&rdquo;"

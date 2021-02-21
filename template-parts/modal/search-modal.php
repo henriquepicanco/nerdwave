@@ -7,7 +7,7 @@
             <div class="col-1-sm col-1">
                 <button class="search-close-toggle" aria-controls="menu-modal" aria-expanded="false">
                     <?php echo nerdwave_get_theme_svg( 'cross' ); ?>
-                    <span class="screen-reader-text"><?php esc_html_e( 'Fechar menu', 'nerdwave' ); ?></span>
+                    <span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'nerdwave' ); ?></span>
                 </button>
             </div>
         </div>

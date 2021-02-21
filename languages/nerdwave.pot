@@ -1,0 +1,175 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Nerdwave 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Henrique Picanço <contato@nerdwave.com.br>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-02-21 20:01-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Domain: nerdwave\n"
+"X-Poedit-KeywordsList: __;_e;_nx;esc_html;esc_html__;esc_html_e;esc_html_x;esc_attr__;esc_attr_e;esc_attr_x\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:22
+msgid "Ops! This page was not found!"
+msgstr ""
+
+#: 404.php:25
+msgid "The page you are looking for was not found at this address. Perhaps the content has moved, or even never existed. Use the search at the top of this page. It can help you find what you are looking for."
+msgstr ""
+
+#: 404.php:28
+msgid "Back to Homepage"
+msgstr ""
+
+#: archive.php:76 category.php:139 index.php:80 search.php:78 tag.php:100
+msgid "Previous page"
+msgstr ""
+
+#: archive.php:77 category.php:140 index.php:81 search.php:79 tag.php:101
+msgid "Next page"
+msgstr ""
+
+#: archive.php:78 category.php:141 index.php:82 search.php:80 tag.php:102
+msgid "Page"
+msgstr ""
+
+#: archive.php:82 category.php:145 index.php:86 search.php:84 tag.php:106
+msgid "Load more"
+msgstr ""
+
+#: comments.php:34
+msgid " comment"
+msgstr ""
+
+#: comments.php:36
+msgid " comments"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:19
+#, php-format
+msgid "%1$s - Content under Creative Commons %2$s"
+msgstr ""
+
+#: footer.php:19
+msgid "Know more"
+msgstr ""
+
+#: functions.php:64
+msgid "Primary"
+msgstr ""
+
+#: functions.php:65
+msgid "Social"
+msgstr ""
+
+#: functions.php:66
+msgid "Footer"
+msgstr ""
+
+#: functions.php:139
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:141
+msgid "Add widgets here."
+msgstr ""
+
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:35
+msgid "Open menu"
+msgstr ""
+
+#: header.php:48 header.php:54
+msgid "Open search"
+msgstr ""
+
+#: inc/template-tags.php:31 inc/template-tags.php:37
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:54
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: inc/template-tags.php:85
+#, php-format
+msgid "No comments<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:109
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/template-tags.php:168
+msgid " minute reading"
+msgstr ""
+
+#: inc/template-tags.php:170
+msgid " minutes of reading"
+msgstr ""
+
+#: template-parts/content/related-posts.php:21
+msgid "Related Posts"
+msgstr ""
+
+#: template-parts/content/share-buttons.php:17
+msgid "Share on Twitter"
+msgstr ""
+
+#: template-parts/content/share-buttons.php:23
+msgid "Share on Facebook"
+msgstr ""
+
+#: template-parts/header/site-branding.php:2
+msgid "Homepage"
+msgstr ""
+
+#: template-parts/modal/menu-modal.php:10
+#: template-parts/modal/search-modal.php:10
+msgid "Close menu"
+msgstr ""
+
+#: template-parts/post/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/post/content-none.php:24
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/post/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/post/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/post/content-single.php:29
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/post/content-single.php:42
+msgid "Pages:"
+msgstr ""
