@@ -16,13 +16,13 @@ if ( ! is_paged() ) : ?>
 					if ( $inc == 1 ) :
 					?>
 
-					<div class="col-12-sm col-6">
+					<div class="col-sm-12 col-6">
 						<?php get_template_part( 'template-parts/post/content-featured' ); ?>
 					</div>
 
 					<?php else : ?>
 
-					<div class="col-12-sm col-3">
+					<div class="col-sm-12 col-3">
 						<?php get_template_part( 'template-parts/post/content-featured' ); ?>
 					</div>
 					

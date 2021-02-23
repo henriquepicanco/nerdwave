@@ -29,7 +29,7 @@
 		<div class="navbar-topbar">
 			<div id="topbar" class="container">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-sm-4 col-4">
 						<button class="menu-toggle mobile-menu-toggle show-sm" aria-controls="menu-modal" aria-expanded="false">
 							<?php echo nerdwave_get_theme_svg( 'bars' ); ?>
 							<span class="screen-reader-text"><?php esc_html_e( 'Open menu', 'nerdwave' ); ?></span>
@@ -38,11 +38,11 @@
 						<?php get_template_part( 'template-parts/navigation/social-navigation' ); ?>
 					</div>
 
-					<div class="col-4">
+					<div class="col-sm-4 col-4">
 						<?php get_template_part( 'template-parts/header/site-branding' ); ?>
 					</div>
 
-					<div class="col-4">
+					<div class="col-sm-4 col-4">
 						<button class="search-toggle mobile-search-toggle show-sm" aria-controls="search-modal" aria-expanded="false">
 							<?php echo nerdwave_get_theme_svg( 'search' ); ?>
 							<span class="screen-reader-text"><?php esc_html_e( 'Open search', 'nerdwave' ); ?></span>
@@ -66,7 +66,7 @@
 		<div class="navbar-bottombar">
 			<div id="bottombar" class="container">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-sm-12 col-12">
 						<?php get_template_part( 'template-parts/navigation/main-navigation' ); ?>
 					</div>
 				</div>

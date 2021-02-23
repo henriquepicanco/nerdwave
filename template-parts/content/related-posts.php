@@ -18,7 +18,7 @@ if ( $the_query->have_posts() ) :
 ?>
 <div class="related-posts">
     <h2 class="widget-title">
-        <?php echo esc_attr__( 'Related Posts', 'nerdwave' ) ?>
+        <?php _e( 'Related Posts', 'nerdwave' ) ?>
     </h2>
 
     <div class="row">

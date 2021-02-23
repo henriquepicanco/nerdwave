@@ -12,28 +12,6 @@
  * @package Nerdwave
  */
 
-if ( is_home() ) :
-
-	$query_posts = new WP_Query( array(
-		'posts_per_page' => 7,
-		'offset' => 3,
-	) );
-
-endif;
-
-if ( is_category() ) :
-
-	$current_cat = get_the_category();
-	$cat_ID = $current_cat[0]->cat_ID;
-
-	$query_posts = new WP_Query( array(
-		'posts_per_page' => 7,
-		'offset' => 3,
-		'cat' => $cat_ID,
-	) );
-
-endif;
-
 get_header();
 ?>
 
@@ -57,16 +35,13 @@ get_header();
 		</div>
 	</div>
 
-	<?php get_template_part( 'template-parts/content/billboard' ); ?>
-
 	<div id="content" class="container">
 		<div class="row">
-			<div class="col-12-sm col-8">
+			<div class="col-sm-12 col-8">
 				<div class="content-area">
 					<main id="primary" class="site-main">
-
 						<?php
-						if ( $query_posts->have_posts() ) :
+						if ( have_posts() ) :
 
 							if ( is_home() && ! is_front_page() ) :
 								?>
@@ -80,8 +55,8 @@ get_header();
 							<div class="site-main-inner">
 								<?php
 								/* Start the Loop */
-								while ( $query_posts->have_posts() ) :
-									$query_posts->the_post();
+								while ( have_posts() ) :
+									the_post();
 
 									/*
 									* Include the Post-Type-specific template for the content.
@@ -112,7 +87,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="col-12-sm col-4">
+			<div class="col-sm-12 col-4">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>

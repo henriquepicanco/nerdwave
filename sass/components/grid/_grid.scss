@@ -25,61 +25,135 @@
 }
 
 .row {
-    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.row [class^="col"] {
-    float: left;
-    min-height: 0.125rem;
+.col-sm-1 {
+    flex-basis:($width / 12) - (0 / 12);
+    width:($width / 12) - (0 / 12);
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+.col-sm-2 {
+    flex-basis: ($width / 6) - (0 / 12);
+    width: ($width / 6) - (0 / 12);
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
+.col-sm-3 {
+    flex-basis: ($width / 4) - (0 / 12);
+    width: ($width / 4) - (0 / 12);
+}
+
+.col-sm-4 {
+    flex-basis: ($width / 3) - (0 / 12);
+    width: ($width / 3) - (0 / 12);
+}
+
+.col-sm-5 {
+    flex-basis: ($width / (12 / 5)) - (0 / 12);
+    width: ($width / (12 / 5)) - (0 / 12);
+}
+
+.col-sm-6 {
+    flex-basis: ($width / 2) - (0 / 12);
+    width: ($width / 2) - (0 / 12);
+}
+
+.col-sm-7 {
+    flex-basis: ($width / (12 / 7)) - (0 / 12);
+    width: ($width / (12 / 7)) - (0 / 12);
+}
+
+.col-sm-8 {
+    flex-basis: ($width / (12 / 8)) - (0 / 12);
+    width: ($width / (12 / 8)) - (0 / 12);
+}
+
+.col-sm-9 {
+    flex-basis: ($width / (12 / 9)) - (03 / 12);
+    width: ($width / (12 / 9)) - (03 / 12);
+}
+
+.col-sm-10 {
+    flex-basis: ($width / (12 / 10)) - (0 / 12);
+    width: ($width / (12 / 10)) - (0 / 12);
+}
+
+.col-sm-11 {
+    flex-basis: ($width / (12 / 11)) - (0 / 12);
+    width: ($width / (12 / 11)) - (0 / 12);
+}
+
+.col-sm-12 {
+    flex-basis: $width;
     width: $width;
 }
 
-.col-1-sm { width:($width / 12) - (0 / 12); }
-.col-2-sm { width: ($width / 6) - (0 / 12); }
-.col-3-sm { width: ($width / 4) - (0 / 12); }
-.col-4-sm { width: ($width / 3) - (0 / 12); }
-.col-5-sm { width: ($width / (12 / 5)) - (0 / 12); }
-.col-6-sm { width: ($width / 2) - (0 / 12); }
-.col-7-sm { width: ($width / (12 / 7)) - (0 / 12); }
-.col-8-sm { width: ($width / (12 / 8)) - (0 / 12); }
-.col-9-sm { width: ($width / (12 / 9)) - (03 / 12); }
-.col-10-sm { width: ($width / (12 / 10)) - (0 / 12); }
-.col-11-sm { width: ($width / (12 / 11)) - (0 / 12); }
-.col-12-sm { width: $width; }
 
 @media only screen and (min-width: 768px) {
-    .col-1 { width:($width / 12) - (0 / 12); }
-    .col-2 { width: ($width / 6) - (0 / 12); }
-    .col-3 { width: ($width / 4) - (0 / 12); }
-    .col-4 { width: ($width / 3) - (0 / 12); }
-    .col-5 { width: ($width / (12 / 5)) - (0 / 12); }
-    .col-6 { width: ($width / 2) - (0 / 12); }
-    .col-7 { width: ($width / (12 / 7)) - (0 / 12); }
-    .col-8 { width: ($width / (12 / 8)) - (0 / 12); }
-    .col-9 { width: ($width / (12 / 9)) - (0 / 12); }
-    .col-10 { width: ($width / (12 / 10)) - (0 / 12); }
-    .col-11 { width: ($width / (12 / 11)) - (0 / 12); }
-    .col-12 { width: $width; }
+    .col-1 { 
+        flex-basis: ($width / 12) - (0 / 12);
+        width: ($width / 12) - (0 / 12);
+    }
+
+    .col-2 { 
+        flex-basis: ($width / 6) - (0 / 12);
+        width: ($width / 6) - (0 / 12);
+    }
+
+    .col-3 { 
+        flex-basis: ($width / 4) - (0 / 12);
+        width: ($width / 4) - (0 / 12);
+    }
+
+    .col-4 { 
+        flex-basis: ($width / 3) - (0 / 12);
+        width: ($width / 3) - (0 / 12);
+    }
+
+    .col-5 { 
+        flex-basis: ($width / (12 / 5)) - (0 / 12);
+        width: ($width / (12 / 5)) - (0 / 12);
+    }
+
+    .col-6 { 
+        flex-basis: ($width / 2) - (0 / 12);
+        width: ($width / 2) - (0 / 12);
+    }
+
+    .col-7 { 
+        flex-basis: ($width / (12 / 7)) - (0 / 12);
+        width: ($width / (12 / 7)) - (0 / 12);
+    }
+
+    .col-8 { 
+        flex-basis: ($width / (12 / 8)) - (0 / 12);
+        width: ($width / (12 / 8)) - (0 / 12);
+    }
+
+    .col-9 { 
+        flex-basis: ($width / (12 / 9)) - (0 / 12);
+        width: ($width / (12 / 9)) - (0 / 12);
+    }
+
+    .col-10 {
+        flex-basis: ($width / (12 / 10)) - (0 / 12);
+        width: ($width / (12 / 10)) - (0 / 12);
+    }
+
+    .col-11 {
+        flex-basis: ($width / (12 / 11)) - (0 / 12);
+        width: ($width / (12 / 11)) - (0 / 12);
+    }
+
+    .col-12 {
+        flex-basis: $width;
+        width: $width;
+    }
+
 
     .hidden-sm {
         display: flex;

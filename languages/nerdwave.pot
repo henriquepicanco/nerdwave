@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-02-21 20:01-0300\n"
+"POT-Creation-Date: 2021-02-22 22:24-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Domain: nerdwave\n"
@@ -30,19 +30,19 @@ msgstr ""
 msgid "Back to Homepage"
 msgstr ""
 
-#: archive.php:76 category.php:139 index.php:80 search.php:78 tag.php:100
+#: archive.php:75 category.php:139 index.php:80 search.php:78 tag.php:75
 msgid "Previous page"
 msgstr ""
 
-#: archive.php:77 category.php:140 index.php:81 search.php:79 tag.php:101
+#: archive.php:76 category.php:140 index.php:81 search.php:79 tag.php:76
 msgid "Next page"
 msgstr ""
 
-#: archive.php:78 category.php:141 index.php:82 search.php:80 tag.php:102
+#: archive.php:77 category.php:141 index.php:82 search.php:80 tag.php:77
 msgid "Page"
 msgstr ""
 
-#: archive.php:82 category.php:145 index.php:86 search.php:84 tag.php:106
+#: archive.php:81 category.php:145 index.php:86 search.php:84 tag.php:81
 msgid "Load more"
 msgstr ""
 

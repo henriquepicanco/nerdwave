@@ -9,10 +9,10 @@
 
 ?>
 
-<div class="col-12-sm col-4">
+<div class="col-sm-12 col-4">
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="row">
-      <div class="col-4-sm col-12">
+      <div class="col-sm-4 col-12">
         <div class="entry-media">
           <a href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
             <?php
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="col-8-sm col-12">
+      <div class="col-sm-8 col-12">
         <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
       </div>
     </div>

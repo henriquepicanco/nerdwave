@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.1' );
+	define( 'NERDWAVE_VERSION', '1.0.2' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -249,8 +249,7 @@ function nerdwave_infinite_scroll_ctrl() {
 
 			}());
 		</script>
-	<?php
-	}
+	<?php }
 }
 add_action( 'wp_footer', 'nerdwave_infinite_scroll_ctrl', 100 );
 

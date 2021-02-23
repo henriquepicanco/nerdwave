@@ -77,13 +77,13 @@ get_header();
 						if ( $inc == 1 ) :
 						?>
 
-						<div class="col-12-sm col-6">
+						<div class="col-sm-12 col-6">
 							<?php get_template_part( 'template-parts/post/content-featured' ); ?>
 						</div>
 
 						<?php else : ?>
 
-						<div class="col-12-sm col-3">
+						<div class="col-sm-12 col-3">
 							<?php get_template_part( 'template-parts/post/content-featured' ); ?>
 						</div>
 						
@@ -100,7 +100,7 @@ get_header();
 
 	<div id="content" class="container">
 		<div class="row">
-			<div class="col-12-sm col-8">
+			<div class="col-sm-12 col-8">
 				<div class="content-area">
 					<main id="primary" class="site-main">
 
@@ -152,7 +152,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="col-12-sm col-4">
+			<div class="col-sm-12 col-4">
 				<?php get_sidebar(); ?>
 			</div>
 		</div>
