@@ -12,12 +12,16 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div id="content" class="container">
-			<div class="site-info">
-				<p><?php get_template_part( 'template-parts/header/site-branding' ); ?></p>
-				<p><?php get_template_part( 'template-parts/navigation/footer-navigation' ); ?></p>
-				<p><?php echo nerdwave_copyright(); ?> <?php printf( esc_html__( '%1$s - Content under Creative Commons %2$s', 'nerdwave' ), get_bloginfo( 'name' ), '<a href="'. get_bloginfo( 'url' ) . '/creative-commons">('. esc_html__( 'Know more', 'nerdwave' ) . ')</a>' ); ?>
-			</div><!-- .site-info -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-12">
+					<div class="site-info">
+						<p><?php get_template_part( 'template-parts/header/site-branding' ); ?></p>
+						<p><?php get_template_part( 'template-parts/navigation/footer-navigation' ); ?></p>
+						<p><?php echo nerdwave_copyright(); ?> <?php printf( esc_html__( '%1$s - Content under Creative Commons %2$s', 'nerdwave' ), get_bloginfo( 'name' ), '<a href="'. get_bloginfo( 'url' ) . '/creative-commons">('. esc_html__( 'Know more', 'nerdwave' ) . ')</a>' ); ?>
+					</div><!-- .site-info -->
+				</div>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

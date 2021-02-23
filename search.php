@@ -19,11 +19,11 @@ get_header();
 	<div id="header" class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-					<?php if( function_exists( 'bcn_display' ) ) :
-						bcn_display();
-					endif; ?>
-				</div>
+				<?php
+				if ( function_exists('yoast_breadcrumb') ) :
+					yoast_breadcrumb( '<div class="breadcrumbs">','</div>' );
+				endif;
+				?>
 				
 				<header class="page-header">
                     <span class="algolia-search">

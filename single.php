@@ -14,12 +14,12 @@ get_header();
 	<div id="content" class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-					<?php if( function_exists( 'bcn_display' ) ) :
-						bcn_display();
-					endif; ?>
-				</div>
-
+				<?php
+				if ( function_exists('yoast_breadcrumb') ) :
+					yoast_breadcrumb( '<div class="breadcrumbs">','</div>' );
+				endif;
+				?>
+				
 				<?php while ( have_posts() ) : the_post(); ?>
 				<header class="entry-header">					
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
