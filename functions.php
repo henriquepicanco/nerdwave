@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.2' );
+	define( 'NERDWAVE_VERSION', '1.0.3' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -188,7 +188,8 @@ function nerdwave_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'nerdwave-fonts', nerdwave_fonts_url(), array(), null );
 
-	wp_enqueue_style( 'nerdwave-style', get_stylesheet_uri(), array(), NERDWAVE_VERSION );
+	wp_register_style( 'nerdwave-style', get_stylesheet_uri(), array(), NERDWAVE_VERSION );
+	wp_add_inline_style( 'nerdwave-style', '' );
 
 	wp_enqueue_style( 'nerdwave-style-min', get_template_directory_uri() . '/assets/css/style.min.css', NERDWAVE_VERSION );
 
