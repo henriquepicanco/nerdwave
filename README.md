@@ -1,4 +1,4 @@
-# Nerdwave [1.0.2]
+# Nerdwave [1.0.5]
 
 This is the theme used on my blog, [Nerdwave](https://nerdwave.com.br). You can suggest changes or make the theme even better. Even, fork this project, to make the necessary changes for you to use this theme in your project!
 

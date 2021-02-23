@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nerdwave 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-02-22 22:24-0300\n"
-"PO-Revision-Date: 2021-02-22 22:24-0300\n"
+"POT-Creation-Date: 2021-02-23 14:29-0300\n"
+"PO-Revision-Date: 2021-02-23 14:29-0300\n"
 "Last-Translator: \n"
 "Language-Team: Henrique Picanço <contato@nerdwave.com.br>\n"
 "Language: pt_BR\n"
@@ -18,6 +18,24 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:22
+msgid "Ops! This page was not found!"
+msgstr "Opa! Esta página não foi encontrada!"
+
+#: 404.php:25
+msgid ""
+"The page you are looking for was not found at this address. Perhaps the "
+"content has moved, or even never existed. Use the search at the top of this "
+"page. It can help you find what you are looking for."
+msgstr ""
+"A página pela qual você busca, não foi encontrada neste endereço. Talvez o "
+"conteúdo tenha mudado de lugar, ou mesmo nunca tenha existido. Use a busca, "
+"no topo desta página. Ela pode te ajudar a encontrar o que procura."
+
+#: 404.php:28
+msgid "Back to Homepage"
+msgstr "Voltar para a Página Inicial"
 
 #: archive.php:75 category.php:139 index.php:80 search.php:78 tag.php:75
 msgid "Previous page"
@@ -43,14 +61,14 @@ msgstr " comentário"
 msgid " comments"
 msgstr " comentários"
 
-#: footer.php:19
-#, php-format
-msgid "%1$s - Content under Creative Commons %2$s"
-msgstr "%1$s - Conteúdo sob Creative Commons %2$s"
+#: comments.php:64
+msgid "Comments are closed."
+msgstr "Comentários fechados."
 
-#: footer.php:19
-msgid "Know more"
-msgstr "Saiba mais"
+#: footer.php:21
+#, php-format
+msgid "%s - Content under Creative Commons"
+msgstr "%s - Conteúdo sob Creative Commons"
 
 #: functions.php:64
 msgid "Primary"
@@ -71,6 +89,18 @@ msgstr "Barra Lateral"
 #: functions.php:141
 msgid "Add widgets here."
 msgstr "Adicione widgets aqui."
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
+
+#: header.php:35
+msgid "Open menu"
+msgstr "Abrir menu"
+
+#: header.php:48 header.php:54
+msgid "Open search"
+msgstr "Abrir busca"
 
 #: inc/template-tags.php:31 inc/template-tags.php:37
 #, php-format
@@ -116,6 +146,15 @@ msgstr "Compartilhar no Facebook"
 msgid "Homepage"
 msgstr "Página Inicial"
 
+#: template-parts/modal/menu-modal.php:10
+#: template-parts/modal/search-modal.php:10
+msgid "Close menu"
+msgstr "Fechar menu"
+
+#: template-parts/post/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nada Encontrado"
+
 #: template-parts/post/content-none.php:24
 #, php-format
 msgid ""
@@ -123,6 +162,22 @@ msgid ""
 msgstr ""
 "Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece por aqui</"
 "a>."
+
+#: template-parts/post/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Desculpa, mas a busca não encontrou algo com estes termos. Por favor, tente "
+"novamente com termos de busca diferentes."
+
+#: template-parts/post/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que n&oacute;s n&atilde;o conseguimos encontrar o que voc&ecirc; "
+"est&aacute; procurando. Talvez a busca possa te ajudar."
 
 #: template-parts/post/content-single.php:29
 #, php-format
@@ -133,52 +188,8 @@ msgstr "Continue lendo<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgid "Pages:"
 msgstr "Páginas:"
 
-#~ msgid "Ops! This page was not found!"
-#~ msgstr "Opa! Esta página não foi encontrada!"
-
-#~ msgid ""
-#~ "The page you are looking for was not found at this address. Perhaps the "
-#~ "content has moved, or even never existed. Use the search at the top of "
-#~ "this page. It can help you find what you are looking for."
-#~ msgstr ""
-#~ "A página pela qual você busca, não foi encontrada neste endereço. Talvez "
-#~ "o conteúdo tenha mudado de lugar, ou mesmo nunca tenha existido. Use a "
-#~ "busca, no topo desta página. Ela pode te ajudar a encontrar o que procura."
-
-#~ msgid "Back to Homepage"
-#~ msgstr "Voltar para a Página Inicial"
-
-#~ msgid "Comments are closed."
-#~ msgstr "Comentários fechados."
-
-#~ msgid "Skip to content"
-#~ msgstr "Pular para o conteúdo"
-
-#~ msgid "Open menu"
-#~ msgstr "Abrir menu"
-
-#~ msgid "Open search"
-#~ msgstr "Abrir busca"
-
-#~ msgid "Close menu"
-#~ msgstr "Fechar menu"
-
-#~ msgid "Nothing Found"
-#~ msgstr "Nada Encontrado"
-
-#~ msgid ""
-#~ "Sorry, but nothing matched your search terms. Please try again with some "
-#~ "different keywords."
-#~ msgstr ""
-#~ "Desculpa, mas a busca não encontrou algo com estes termos. Por favor, "
-#~ "tente novamente com termos de busca diferentes."
-
-#~ msgid ""
-#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-#~ "searching can help."
-#~ msgstr ""
-#~ "Parece que n&oacute;s n&atilde;o conseguimos encontrar o que voc&ecirc; "
-#~ "est&aacute; procurando. Talvez a busca possa te ajudar."
+#~ msgid "Know more"
+#~ msgstr "Saiba mais"
 
 #~ msgid "One comment"
 #~ msgstr "Um comentário"
