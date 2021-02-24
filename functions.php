@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.8' );
+	define( 'NERDWAVE_VERSION', '1.0.9' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -210,6 +210,16 @@ function nerdwave_scripts() {
 	//}
 }
 add_action( 'wp_enqueue_scripts', 'nerdwave_scripts' );
+
+/**
+ * Removing Jetpack's CSS
+ *
+ * This theme does not use, nor does it allow, the Jetpack elements
+ * in the frontend. Therefore, all the CSS used by Jetpack has been removed.
+ *
+ * @since nerdwave 1.0.9
+ */
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 
 /**
  * Changing archive headers
