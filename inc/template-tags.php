@@ -81,16 +81,45 @@ if ( ! function_exists( 'nerdwave_comments_link' ) ) :
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-						/* translators: %s: post title */
-						__( 'No comments<span class="screen-reader-text"> on %s</span>', 'nerdwave' ),
+						/* translators: %1$s: comments icon; %2$s: post title */
+						__( '0 %1$s <span class="screen-reader-text">Comments on %2$s</span>', 'nerdwave' ),
 						array(
 							'span' => array(
 								'class' => array(),
 							),
 						)
 					),
+					nerdwave_get_theme_svg( 'comment' ),
 					wp_kses_post( get_the_title() )
-				)
+				),
+				sprintf(
+					wp_kses(
+						/* translators: %1$s: comments icon; %2$s: post title */
+						__( '0 %1$s <span class="screen-reader-text">Comments on %2$s</span>', 'nerdwave' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					nerdwave_get_theme_svg( 'comment' ),
+					wp_kses_post( get_the_title() )
+				),
+				sprintf(
+					wp_kses(
+						/* translators: %1$s: comments icon; %2$s: post title */
+						__( '%1$s %2$s <span class="screen-reader-text">Comments on %3$s</span>', 'nerdwave' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					get_comments_number( get_the_ID() ),
+					nerdwave_get_theme_svg( 'comment' ),
+					wp_kses_post( get_the_title() )
+				),
+				sprintf()
 			);
 			echo '</span>';
 		}

@@ -7,28 +7,41 @@ body {
         transition: transform 0.5s;
     }
 
+    &:after {
+        content: "";
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        background: transparent;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+
+        transition: all .5s;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
     &.offcanvas-menu-active {
         overflow: hidden;
-
-        #page {
-            transform: translateX(100vw);
-            transition: transform 0.5s;
-        }
 
         &:after {
             content: "";
             position: fixed;
             opacity: 1;
-            background: rgba(0, 0, 0, 0.5);
+            visibility: visible;
+            background: rgba(0, 0, 0, 0.75);
             height: 100vh;
             width: 100vw;
             top: 0;
 
-            animation: fade .5s;
+            transition: all .5s;
         }
 
         @media screen and (min-width: 768px) {
-            overflow: none;
+            overflow: visible;
 
             #page {
                 transform: translateX(0);
@@ -43,21 +56,17 @@ body {
     &.offcanvas-search-active {
         overflow: hidden;
 
-        #page {
-            transform: translateX(-100vw);
-            transition: transform 0.5s;
-        }
-
         &:after {
             content: "";
             position: fixed;
             opacity: 1;
-            background: rgba(0, 0, 0, 0.5);
+            visibility: visible;
+            background: rgba(0, 0, 0, 0.75);
             height: 100vh;
             width: 100vw;
             top: 0;
 
-            animation: fade .5s;
+            transition: all .5s;
         }
 
         @media screen and (min-width: 768px) {
