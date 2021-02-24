@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.6' );
+	define( 'NERDWAVE_VERSION', '1.0.7' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -192,6 +192,11 @@ function nerdwave_scripts() {
 	wp_add_inline_style( 'nerdwave-style', '' );
 
 	wp_enqueue_style( 'nerdwave-style-min', get_template_directory_uri() . '/assets/css/style.min.css', NERDWAVE_VERSION );
+
+	// Removing Gutenberg styles
+	wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'wc-block-style' );
 
 	wp_enqueue_script( 'nerdwave-index', get_template_directory_uri() . '/assets/js/index.js', array(), NERDWAVE_VERSION, true );
 
