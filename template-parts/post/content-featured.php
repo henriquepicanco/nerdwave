@@ -6,15 +6,26 @@
  *
  * @package Nerdwave
  */
-
-$featured_img_url = get_the_post_thumbnail_url( $post->ID, 'nerdwave-thubmanil' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <a class="billboard-link" href="<?php the_permalink(); ?>" rel="bookmark">
         </a>
 
-        <?php echo '<span class="entry-thumb" style="background-image: url(' . $featured_img_url . ')"></span>'; ?>
+        <div class="entry-media">
+            <?php
+                the_post_thumbnail(
+                    'nerdwave_thumbnail',
+                        array(
+                            'alt' => the_title_attribute(
+                                array(
+                                    'echo' => false,
+                                )
+                            ),
+                        )
+                );
+            ?>
+        </div>
 
         <span class="overlay">
             <div class="entry-header">
