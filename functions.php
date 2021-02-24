@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.7' );
+	define( 'NERDWAVE_VERSION', '1.0.8' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :

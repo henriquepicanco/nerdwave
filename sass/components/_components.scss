@@ -8,7 +8,7 @@ body {
     }
 
     &.offcanvas-menu-active {
-        overflow: visible;
+        overflow: hidden;
 
         #page {
             transform: translateX(100vw);
