@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.5' );
+	define( 'NERDWAVE_VERSION', '1.0.6' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -150,29 +150,29 @@ add_action( 'widgets_init', 'nerdwave_widgets_init' );
 
 if ( ! function_exists( 'nerdwave_fonts_url' ) ) :
 	/**
-	 * Register Google fonts for Twenty Sixteen.
+	 * Register Google fonts for Nerdwave.
 	 *
 	 * Create your own nerdwave_fonts_url() function to override in a child theme.
 	 *
-	 * @since nerdwave 2.0
+	 * @since Nerdwave 1.0
 	 *
 	 * @return string Google fonts URL for the theme.
 	 */
 	function nerdwave_fonts_url() {
 		$fonts_url = '';
 		$fonts     = array();
-		$subsets   = 'display=swap';
+		$subsets   = 'latin,latin-ext';
 
 		/* translators: If there are characters in your language that are not supported by Inter, translate this to 'off'. Do not translate into your own language. */
 		if ( 'off' !== _x( 'on', 'Inter font: on or off', 'nerdwave' ) ) {
-			$fonts[] = 'Inter:wght@400;600;700';
+			$fonts[] = 'Inter:400,400i,600,600i,700,700i';
 		}
 	
 		if ( $fonts ) {
 			$fonts_url = add_query_arg( array(
 				'family' => urlencode( implode( '|', $fonts ) ),
 				'subset' => urlencode( $subsets ),
-			), 'https://fonts.googleapis.com/css2' );
+			), 'https://fonts.googleapis.com/css' );
 		}
 	
 		return $fonts_url;
@@ -272,7 +272,7 @@ add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
  * 
  * Displays three posts related to the actual post.
  * 
- * @since nerdwave 2.0
+ * @since nerdwave 1.0
  */
 function nerdwave_get_related_posts( $post_id, $related_count, $args = array() ) {
 
