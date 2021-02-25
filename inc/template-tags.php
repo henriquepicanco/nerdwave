@@ -194,9 +194,9 @@ if ( ! function_exists( 'nerdwave_reading_time' ) ) :
 		$readingtime = ceil($word_count / 200);
 
 		if ($readingtime == 1) {
-			$timer = esc_html__( ' minute reading', 'nerdwave' );
+			$timer = esc_html__( ' min reading', 'nerdwave' );
 		} else {
-			$timer = esc_html__( ' minutes of reading', 'nerdwave' );
+			$timer = esc_html__( ' min of reading', 'nerdwave' );
 		}
 		
 		$totalreadingtime = $readingtime . $timer;
