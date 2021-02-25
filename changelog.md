@@ -8,7 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Fix: some font sizes in mobile at single pages
 - Fix: Comments link at single pages
-- Fix: Container spacing from 3rem to 2rem padding
 - Post summary removed from single pages for conversion purposes
 
 ## [1.0.11] - 02-24-2020
