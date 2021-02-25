@@ -113,7 +113,7 @@ article {
 	.single &,
 	.page & {
 		padding-top: 1rem;
-		padding-bottom: 2rem;
+		padding-bottom: 1rem;
 	}
 }
 
@@ -174,7 +174,6 @@ article {
 	.page & {
 		font-size: 1.75rem;
 		letter-spacing: -1px;
-		margin-bottom: 0.625rem;
 
 		@media screen and (min-width: $breakpoint-small) {
 			font-size: 2.375rem;
@@ -190,7 +189,7 @@ article {
 	display: block;
 	color: #666666;
 	font-size: 0.875rem;
-	margin-top: 1rem;
+	margin: 1rem 0;
 
 	.posted-on {
 		font-weight: 600;
