@@ -95,7 +95,7 @@ if ( ! function_exists( 'nerdwave_comments_link' ) ) :
 				sprintf(
 					wp_kses(
 						/* translators: %1$s: comments icon; %2$s: post title */
-						__( '0 %1$s <span class="screen-reader-text">Comments on %2$s</span>', 'nerdwave' ),
+						__( '1 %1$s <span class="screen-reader-text">Comments on %2$s</span>', 'nerdwave' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -119,7 +119,7 @@ if ( ! function_exists( 'nerdwave_comments_link' ) ) :
 					nerdwave_get_theme_svg( 'comment' ),
 					wp_kses_post( get_the_title() )
 				),
-				sprintf()
+				sprintf( __( 'Closed comments', 'nerdwave' ) )
 			);
 			echo '</span>';
 		}
