@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nerdwave 1.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2021-02-23 14:29-0300\n"
-"PO-Revision-Date: 2021-02-23 14:29-0300\n"
+"POT-Creation-Date: 2021-02-25 14:41-0300\n"
+"PO-Revision-Date: 2021-02-25 14:43-0300\n"
 "Last-Translator: \n"
 "Language-Team: Henrique Picanço <contato@nerdwave.com.br>\n"
 "Language: pt_BR\n"
@@ -114,21 +114,35 @@ msgstr "Por %s"
 
 #: inc/template-tags.php:85
 #, php-format
-msgid "No comments<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Nenhum comentário<span class=\"screen-reader-text\"> em %s</span>"
+msgid "0 %1$s <span class=\"screen-reader-text\">Comments on %2$s</span>"
+msgstr "0 %1$s <span class=\"screen-reader-text\">Comentários em %2$s</span>"
 
-#: inc/template-tags.php:109
+#: inc/template-tags.php:98
+#, php-format
+msgid "1 %1$s <span class=\"screen-reader-text\">Comments on %2$s</span>"
+msgstr "1 %1$s <span class=\"screen-reader-text\">Comentário em %2$s</span>"
+
+#: inc/template-tags.php:111
+#, php-format
+msgid "%1$s %2$s <span class=\"screen-reader-text\">Comments on %3$s</span>"
+msgstr "%1$s %2$s <span class=\"screen-reader-text\">Comentários %3$s</span>"
+
+#: inc/template-tags.php:122
+msgid "Closed comments"
+msgstr "Comentários encerrados"
+
+#: inc/template-tags.php:138
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Editar <span class=\"screen-reader-text\">%s</span>"
 
-#: inc/template-tags.php:168
-msgid " minute reading"
-msgstr " minuto de leitura"
+#: inc/template-tags.php:197
+msgid " min reading"
+msgstr " min de leitura"
 
-#: inc/template-tags.php:170
-msgid " minutes of reading"
-msgstr " minutos de leitura"
+#: inc/template-tags.php:199
+msgid " min of reading"
+msgstr " min de leitura"
 
 #: template-parts/content/related-posts.php:21
 msgid "Related Posts"

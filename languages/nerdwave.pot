@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-02-23 14:29-0300\n"
+"POT-Creation-Date: 2021-02-25 14:41-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Domain: nerdwave\n"
@@ -107,20 +107,34 @@ msgstr ""
 
 #: inc/template-tags.php:85
 #, php-format
-msgid "No comments<span class=\"screen-reader-text\"> on %s</span>"
+msgid "0 %1$s <span class=\"screen-reader-text\">Comments on %2$s</span>"
 msgstr ""
 
-#: inc/template-tags.php:109
+#: inc/template-tags.php:98
+#, php-format
+msgid "1 %1$s <span class=\"screen-reader-text\">Comments on %2$s</span>"
+msgstr ""
+
+#: inc/template-tags.php:111
+#, php-format
+msgid "%1$s %2$s <span class=\"screen-reader-text\">Comments on %3$s</span>"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "Closed comments"
+msgstr ""
+
+#: inc/template-tags.php:138
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-tags.php:168
-msgid " minute reading"
+#: inc/template-tags.php:197
+msgid " min reading"
 msgstr ""
 
-#: inc/template-tags.php:170
-msgid " minutes of reading"
+#: inc/template-tags.php:199
+msgid " min of reading"
 msgstr ""
 
 #: template-parts/content/related-posts.php:21
