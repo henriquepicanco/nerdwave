@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.16' );
+	define( 'NERDWAVE_VERSION', '1.0.17' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -217,7 +217,7 @@ add_action( 'wp_enqueue_scripts', 'nerdwave_scripts' );
  * This theme does not use, nor does it allow, the Jetpack elements
  * in the frontend. Therefore, all the CSS used by Jetpack has been removed.
  *
- * @since nerdwave 1.0.16
+ * @since nerdwave 1.0.17
  */
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 
