@@ -34,7 +34,7 @@
       </div>
 
       <div class="col-sm-8 col-12">
-        <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+        <?php the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' ); ?>
       </div>
     </div>
   </div>

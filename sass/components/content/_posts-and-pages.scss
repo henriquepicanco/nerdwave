@@ -86,7 +86,8 @@ article {
 	margin-bottom: 1.125rem;
 
 	.single &,
-	.page & {
+	.page &,
+	.error404 & {
 		padding: 0;
 		border: 0;
 	}
@@ -111,7 +112,8 @@ article {
 	position: relative;
 	
 	.single &,
-	.page & {
+	.page &,
+	.error404 & {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
@@ -171,7 +173,8 @@ article {
 	}
 
 	.single &,
-	.page & {
+	.page &,
+	.error404 & {
 		font-size: 1.75rem;
 		letter-spacing: -1px;
 
@@ -329,7 +332,8 @@ article {
 		margin: 0;
 	}
 
-	.page & {
+	.page &,
+	.error404 & {
 		display: block;
 		font-size: 1rem;
 		line-height: 2;
@@ -340,7 +344,8 @@ article {
 		margin: 0;
 
 		.single &,
-		.page & {
+		.page &,
+		.error404 & {
 			margin-bottom: 1.875rem;
 		}
 	}

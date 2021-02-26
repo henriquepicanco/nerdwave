@@ -9,7 +9,7 @@
 
 if ( ! defined( 'NERDWAVE_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'NERDWAVE_VERSION', '1.0.14' );
+	define( 'NERDWAVE_VERSION', '1.0.15' );
 }
 
 if ( ! function_exists( 'nerdwave_setup' ) ) :
@@ -141,8 +141,8 @@ function nerdwave_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'nerdwave' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<p class="widget-title">',
+			'after_title'   => '</p>',
 		)
 	);
 }
@@ -217,7 +217,7 @@ add_action( 'wp_enqueue_scripts', 'nerdwave_scripts' );
  * This theme does not use, nor does it allow, the Jetpack elements
  * in the frontend. Therefore, all the CSS used by Jetpack has been removed.
  *
- * @since nerdwave 1.0.14
+ * @since nerdwave 1.0.15
  */
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 
